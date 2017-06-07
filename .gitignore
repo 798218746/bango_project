@@ -1,0 +1,6 @@
+#过滤文件
+/doc
+/node_modules
+/*.zip
+/*.rar
+/*.gz

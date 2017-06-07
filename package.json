@@ -1,0 +1,14 @@
+{
+  "name": "banggou",
+  "version": "1.0.0",
+  "description": "初次项目开发",
+  "main": "gulpfile.js",
+  "directories": {
+    "doc": "doc"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "798218746@qq.com",
+  "license": "ISC"
+}
