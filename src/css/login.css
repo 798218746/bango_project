@@ -1,0 +1,129 @@
+@charset "UTF-8";
+.headLogo .container .logo {
+  width: 220px;
+  height: 100px; }
+
+.headLogo .container .main {
+  margin-top: 25px;
+  display: block;
+  /*右边登录界面*/ }
+  .headLogo .container .main .main_left {
+    width: 640px;
+    height: 430px;
+    float: left; }
+  .headLogo .container .main .login_tab {
+    width: 340px;
+    float: left; }
+    .headLogo .container .main .login_tab .login_title {
+      height: 40px; }
+      .headLogo .container .main .login_tab .login_title span {
+        margin: 0;
+        padding: 3px;
+        display: inline-block;
+        width: 108px;
+        color: #666;
+        cursor: pointer;
+        line-height: 34px;
+        text-align: center;
+        border: 1px solid #ccc;
+        background-color: #fff; }
+      .headLogo .container .main .login_tab .login_title span.active {
+        padding-top: 3px;
+        border-top: 2px solid #c00;
+        border-bottom: none; }
+    .headLogo .container .main .login_tab .login_content {
+      width: 331px;
+      height: 278px;
+      border: 1px solid #ccc;
+      border-top: none;
+      padding-top: 1px;
+      margin-top: -1px; }
+      .headLogo .container .main .login_tab .login_content .loginMsg {
+        height: 278px;
+        overflow: hidden;
+        /*复选框*/
+        /*登录按钮*/ }
+        .headLogo .container .main .login_tab .login_content .loginMsg .item {
+          margin-top: 30px;
+          overflow: hidden; }
+          .headLogo .container .main .login_tab .login_content .loginMsg .item .ltext {
+            float: left;
+            width: 80px;
+            color: #666;
+            line-height: 28px;
+            font-size: 14px;
+            text-align: right; }
+          .headLogo .container .main .login_tab .login_content .loginMsg .item input {
+            float: left;
+            border: 1px solid #ccc;
+            width: 220px;
+            height: 26px;
+            line-height: 26px;
+            padding: 0 5px;
+            margin: 0 10px 0 0;
+            display: block; }
+          .headLogo .container .main .login_tab .login_content .loginMsg .item .verify_text {
+            padding-left: 80px;
+            height: 20px;
+            line-height: 20px; }
+        .headLogo .container .main .login_tab .login_content .loginMsg #yzm {
+          width: 50px;
+          height: 26px;
+          line-height: 26px;
+          margin-right: 10px; }
+        .headLogo .container .main .login_tab .login_content .loginMsg .checks {
+          margin-top: 5px;
+          overflow: hidden; }
+          .headLogo .container .main .login_tab .login_content .loginMsg .checks .ltext_checks {
+            display: block;
+            color: #666;
+            float: left;
+            width: 80px;
+            line-height: 28px;
+            font-size: 14px;
+            text-align: right; }
+          .headLogo .container .main .login_tab .login_content .loginMsg .checks .selectCheck {
+            float: left;
+            height: 26px;
+            line-height: 26px;
+            padding: 0 5px;
+            margin: 12px 10px 0 0; }
+          .headLogo .container .main .login_tab .login_content .loginMsg .checks .remb_label {
+            margin-right: 20px; }
+          .headLogo .container .main .login_tab .login_content .loginMsg .checks .verify_text {
+            padding-left: 80px;
+            height: 20px;
+            line-height: 20px; }
+        .headLogo .container .main .login_tab .login_content .loginMsg .loginBtn {
+          margin-top: 5px;
+          overflow: hidden; }
+          .headLogo .container .main .login_tab .login_content .loginMsg .loginBtn .loginBtn_empty {
+            display: block;
+            color: #666;
+            float: left;
+            width: 80px;
+            line-height: 28px;
+            font-size: 14px;
+            text-align: right; }
+          .headLogo .container .main .login_tab .login_content .loginMsg .loginBtn .login_btn {
+            float: left;
+            height: 34px;
+            line-height: 34px;
+            padding: 0 5px;
+            margin-right: 10px; }
+            .headLogo .container .main .login_tab .login_content .loginMsg .loginBtn .login_btn a {
+              width: 106px;
+              height: 34px;
+              line-height: 34px;
+              display: inline-block; }
+              .headLogo .container .main .login_tab .login_content .loginMsg .loginBtn .login_btn a img {
+                height: 100%;
+                width: 100%; }
+          .headLogo .container .main .login_tab .login_content .loginMsg .loginBtn a {
+            line-height: 34px; }
+          .headLogo .container .main .login_tab .login_content .loginMsg .loginBtn :hover {
+            color: #FF0000; }
+          .headLogo .container .main .login_tab .login_content .loginMsg .loginBtn .verify_text {
+            padding-left: 80px;
+            height: 20px;
+            line-height: 20px; }

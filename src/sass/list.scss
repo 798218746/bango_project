@@ -1,0 +1,279 @@
+/*--------顶部---------*/
+#top{
+    border-bottom: 1px solid #DCDCDC;overflow: hidden;
+    .container{
+        height: 32px;overflow: hidden;line-height: 32px; color: #999999;
+        .top_l{float: left;}
+        .top_r{float: right;overflow: hidden;}
+        .top_r li{float: left;padding: 0 10px;}
+        .top_r li::after{content: '';}
+    }
+}
+/*---------头部导航栏---------*/
+#head{
+    border-bottom: 1px solid #d51819;overflow: hidden;
+    .container{
+        height: 118px;overflow: hidden;
+        .head_t{
+            display: block; overflow: hidden;
+            .logo{height: 50px;width: 210px;float: left;background-image: url(../img/logo.png);margin-top: 5px;}
+            .head_t_c{
+               width: 750px;padding-top: 7px;float: left;margin-left: 30px;
+                .serach_top{
+                    width: 378px;margin-top: 10px;width: 100%;overflow: hidden;
+                    .serchContent{
+                        width: 100%;overflow: hidden;
+                        .searchLeft{
+                            position: relative;height: 32px;overflow: hidden;
+                            label{
+                                cursor: default;overflow: hidden;
+                                .search_text{width: 285px; height: 30px;border: 1px #d51819 solid;padding: 5px 0 5px 5px;float: left;display: block;color: #666;line-height: 30px;}
+                                .serach_top_subBtn{
+                                    border: none; font-family: "微软雅黑", "宋体", "verdana";padding: 0 28px;width: 83px;
+                                    height: 30px;line-height: 30px;text-align: right;font-size: 14px;color: #fff;
+                                    background-color: #d51819;display: inline-block;cursor: pointer;
+                                }
+                            }
+                        }  
+                    }
+                    .hotkey{
+                        float: right;margin-top: -20px;width: 350px;font-size: 12px;line-height: 12px;
+                        li{
+                            float: left;margin-left: 8px;
+                            a{text-decoration: none;color: #000;}
+                        }
+                        li::after{content: '';line-height: 12px;border-right: 1px solid #E2DCE2;margin-left:8px;}
+                        
+                        li:last-child::after{border-right: none;} 
+                        li:nth-child(2n-1){
+                            a{color: #D30A06;}
+                        }
+                    } 
+                }
+                
+            }
+            .shopping_bag{
+                float: right;height: 55px;width: 150px;line-height: 18px;margin-top: 27px;
+                a{
+                    font-size: 14px;
+                    b{color: #d93938;font-weight: 400;}
+                }
+            }
+        }
+        //head底部---导航栏
+        .head_b{
+            margin-top: 8px;overflow: hidden;
+            ul{
+                font-size: 14px;line-height: 30px;position: relative;overflow: hidden;
+                .shopping_classify{
+                    position: relative;width: 224px;height: 40px;line-height: 40px;background-color: #d51819;cursor: pointer;z-index: 899;margin-top: -6px;padding: 0 12px;color: #fff;
+                    .iconfont{width: 18px;height: 18px;padding-right: 14px; display: inline-block;color: #fff;font-weight: 600;font-size: 26px;}
+                }
+                li{
+                    float: left;padding: 0 15px;
+                    a{color: #000;}
+                }
+                //右侧导航
+                .head_b_pic{
+                   width: 134px;height: 40px;position: absolute;bottom: 7px;right: 0;float: right !important;
+                    a{
+                        display: block;
+                        background: url('img/mobilegai.gif') 134px 40px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*---------页面导航------------*/
+.nav_page{
+    height: 46px;
+    .container{
+        font-size: 12px;overflow: hidden;padding: 5px 0;
+        .link_page{
+            float: left;line-height: 26px;
+            a{padding: 15px 0 5px;}
+        }
+        form{
+            float:left;overflow: hidden;margin-left: 10px;
+            .second_search{
+                position: relative;
+                #word{width: 110px;height: 24px; padding: 2px 5px;font-size: 12px;}
+                .secBtn{
+                    width: 19px;height: 19px;padding: 0;margin: 0;border: none;
+                    position: relative;top: 3px;right: 28px;
+                }
+                
+            }
+        }
+        
+    }
+}
+/*---------商品分类--------------*/
+.goods_all{
+    .container{
+        overflow: hidden;
+        /*----左侧-----*/
+        .goods_all_l{
+            width: 180px;float: left;display: block;margin: 10px 40px 0 0;
+            .goods_all_l_box{
+                width: 180px;height: 140px;
+                h1{font-size: 16px;font-weight: 700;border-bottom: 1px #000 solid;padding-bottom: 10px;}
+                ul{
+                    li{
+                        width: 180px;height: 18px;margin-top: 7px;
+                        a{
+                            padding: 10px;position: relative;cursor: pointer;
+                        }
+                        a::before{content: '';background-image: url('../css/img/right_jt.jpg');position: absolute;left: 0;top: 14px;margin-right: 2px;width: 8px;height: 8px;}
+                    }
+                }
+            }
+        }
+        /*----右侧-----*/
+        .goods_all_r{
+            float: right;width: 980px;
+            .searchframe{
+                overflow: hidden;
+                .hot_key{
+                    width: 978px;border: 1px solid #ccc;border-bottom: none;background-color: #F7F7F7;padding: 8px 0;
+                    ul{
+                        height: 18px;margin-bottom: 0;
+                        li{
+                            float: left;font-size: 12px;
+                            span{padding: 0 10px;}
+                        }
+                    }
+                }
+                /*-----查找选项------*/
+                .search_option{
+                    width: 978px;height: auto !important;float: left;display: block;border: 1px solid #ccc;
+                    .mainSearch{
+                        overflow: hidden;
+                        .searchItem{
+                            width: 938px;float: left;margin: 10px 0 0 20px;display: block;overflow: hidden;
+                            span{width: 50px;float: left;border-right: 1px #ccc solid;}
+                            .searchItem_content{
+                               height: 19px; width: 818px;float: left; overflow-y: hidden;
+                                a{
+                                    margin: 0 0 10px 20px;display: block;float: left;
+                                }
+                                .pricequjian{
+                                    color: #ccc;margin-left: 40px;float: left;
+                                    b{font-weight: 400px;float: left;padding: 0 5px;}
+                                    input[type=text]{
+                                        width: 35px;height: 18px;border-color: #ccc;color: #333;text-align: center;border: 1px solid #b0b0b0;padding: 2px 5px; float: left;
+                                    }
+                                    input[type=button]{
+                                        width: 45px;height: 19px;border: 1px solid #CCC;color: #000;background-color: #F5F5F5;text-align: center;margin-left: 5px;border-radius: 2px;cursor: pointer;float: left;
+                                    }
+                                }
+                            }
+                            .searchItem_more{
+                                width: 50px;cursor: pointer;display: block;float: right;
+                               position: relative;
+                            }
+                            .searchItem_more::after{
+                                content: '';width: 7px;height: 3px;position: absolute;top: 7px;right: 10px;
+                                 background: url('../css/img/icon.fw.png')0px 0px;
+                            }
+                            
+                        }
+                    }
+                    .searchBox{
+                        width: 978px;height: 36px;position: relative;overflow: hidden;
+                        b{float: left;margin: 12px 0 0 20px;font-style: normal;}
+                        .searchBox_item{
+                           margin: 10px 0 0 20px;width: auto;float: left;
+                            .searchBox_item_option{
+                                height: 30px;float: left;display: block;width: auto;
+                                .searchBox_item_option_menu{font-size: 12px;
+                                    width: 55px;height: auto;padding: 3px 15px 2px 10px;float: left;display: block;
+                                    cursor: pointer;border: 1px solid #B5B5B5;border-radius: 3px;position: relative;
+                                    i{
+                                        width: 10px;height: 8px;background: url('../css/img/icon.fw.png') -260px 0;position: absolute;top: 8px;right: 2px;
+                                    }
+                                }
+                                :hover i{display: none;}
+                            }
+                        }
+                    }
+                }
+            }
+            .searchAlert{padding-top: 15px;
+                width: 980px;display: block;overflow: hidden;font-size: 12px;
+                b{color: red;font-weight: bold;}
+            }
+            /*---商品过滤导航------*/
+           .shop_filter{
+               width: 980px;margin: 15px auto 0;overflow: hidden;background-color: #f0f0f0;
+               .shop_filter_item{
+                   a{float: left;display: block;border-right: 2px #fff solid;margin: 0;padding: 10px 25px;}
+                  .moren{background-color: #F8584F;color: #fff;}
+                  :hover{background-color: #FF7A72;color: #fff;}
+                  .filterUp{position: relative;}
+                  .filterUp::after{content: ''; width: 9px;height: 14px;position: absolute;top: 12px;right: 8px;background: url('../css/img/icon.fw.png') -280px 0;}
+//                .filterUp::after:hover{content: ''; width: 9px;height: 14px;position: absolute;top: 12px;right: 8px;background: url('../css/img/icon.fw.png') -290px 0;}
+               }
+               .pageTop{
+                   margin: 10px  10px 0 0;float: right;overflow: hidden;
+                   .pageTop_act{ float: left;padding: 1px 15px 0;}
+                   .pageTop_show{float: left;
+                        label{margin: 0 5px;}
+                   }
+               }
+           
+           }
+           /*---商品列表-----*/ 
+           .container-fluid{
+               padding: 0;
+               .goodslist{
+                   .col-sm-4{
+                       width: 230px; height: 420px;margin: 15px 15px 0 0;padding: 0;
+                       .thumbnail{ 
+                           height: 420px;
+                           a{
+                               text-decoration: none; color: #000;
+                                img{width: 230px;height: 315px;}}
+                           .caption{  
+                               padding: 0 9px;
+                               p{margin: 0;}
+                               .goodsname{display: block; width: 210px;height:20px;overflow: hidden;}
+                               .moreColor{
+                                   ul{
+                                       margin: 0;
+                                      li{
+                                           float: left;margin: 0 3px;
+                                           a{
+                                               img{height: 31px;width: 31px;}
+                                           }
+                                           :hover{cursor: pointer;}
+                                       }
+                                   }
+                                   
+                               }
+                           }
+                          
+                       }
+                   }
+               }
+           } 
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        }
+    }
+}
+
+
+
+
+
+

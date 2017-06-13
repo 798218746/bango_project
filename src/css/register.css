@@ -1,0 +1,59 @@
+.registerPage .container {
+  margin: auto; }
+  .registerPage .container .main_register {
+    width: 980px; }
+    .registerPage .container .main_register .reg_box {
+      overflow: hidden;
+      border: 1px solid #ccc;
+      margin-top: 5px; }
+      .registerPage .container .main_register .reg_box .reg_box_l {
+        float: left;
+        width: 743px;
+        padding-left: 15px;
+        padding-bottom: 30px; }
+        .registerPage .container .main_register .reg_box .reg_box_l .descript {
+          width: 700px;
+          font-size: 14px;
+          text-indent: 20px;
+          line-height: 30px;
+          margin-left: 15px;
+          border-bottom: 1px dotted #E6E6E6; }
+        .registerPage .container .main_register .reg_box .reg_box_l .ltext {
+          width: 120px;
+          line-height: 30px;
+          font-size: 14px;
+          color: #666;
+          text-align: right;
+          display: inline-block; }
+        .registerPage .container .main_register .reg_box .reg_box_l .textCon {
+          border: 1px solid #ABABAB;
+          width: 240px;
+          height: 28px;
+          line-height: 28px;
+          padding: 0 5px;
+          margin: 0 10px 0 0; }
+        .registerPage .container .main_register .reg_box .reg_box_l .tips {
+          width: 305px;
+          margin-top: -2px;
+          display: inline-block;
+          color: #999; }
+        .registerPage .container .main_register .reg_box .reg_box_l .codeCon {
+          width: 120px;
+          border: 1px solid #ABABAB;
+          height: 28px;
+          line-height: 28px;
+          padding: 0 5px;
+          margin: 0 10px 0 0; }
+        .registerPage .container .main_register .reg_box .reg_box_l .regSub .ltext {
+          width: 120px;
+          line-height: 30px;
+          font-size: 14px;
+          color: #666;
+          text-align: right;
+          display: inline-block; }
+        .registerPage .container .main_register .reg_box .reg_box_l .regSub .reg_sub {
+          width: 240px;
+          height: 28px;
+          display: inline-block; }
+      .registerPage .container .main_register .reg_box .reg_box_r {
+        float: left; }

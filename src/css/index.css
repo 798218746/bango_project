@@ -1,0 +1,396 @@
+@charset "UTF-8";
+/*--------顶部---------*/
+#top {
+  border-bottom: 1px solid #DCDCDC;
+  overflow: hidden; }
+  #top .container {
+    height: 32px;
+    overflow: hidden;
+    line-height: 32px;
+    color: #999999; }
+    #top .container .top_l {
+      float: left; }
+    #top .container .top_r {
+      float: right;
+      overflow: hidden; }
+    #top .container .top_r li {
+      float: left;
+      padding: 0 10px; }
+    #top .container .top_r li::after {
+      content: ''; }
+
+/*---------头部导航栏---------*/
+#head {
+  border-bottom: 1px solid #d51819;
+  overflow: hidden; }
+  #head .container {
+    height: 118px;
+    overflow: hidden; }
+    #head .container .head_t {
+      display: block;
+      overflow: hidden; }
+      #head .container .head_t .logo {
+        height: 50px;
+        width: 210px;
+        float: left;
+        background-image: url(../img/logo.png);
+        margin-top: 5px; }
+      #head .container .head_t .head_t_c {
+        width: 750px;
+        padding-top: 7px;
+        float: left;
+        margin-left: 30px; }
+        #head .container .head_t .head_t_c .serach_top {
+          width: 378px;
+          margin-top: 10px;
+          width: 100%;
+          overflow: hidden; }
+          #head .container .head_t .head_t_c .serach_top .serchContent {
+            width: 100%;
+            overflow: hidden; }
+            #head .container .head_t .head_t_c .serach_top .serchContent .searchLeft {
+              position: relative;
+              height: 32px;
+              overflow: hidden; }
+              #head .container .head_t .head_t_c .serach_top .serchContent .searchLeft label {
+                cursor: default;
+                overflow: hidden; }
+                #head .container .head_t .head_t_c .serach_top .serchContent .searchLeft label .search_text {
+                  width: 285px;
+                  height: 30px;
+                  border: 1px #d51819 solid;
+                  padding: 5px 0 5px 5px;
+                  float: left;
+                  display: block;
+                  color: #666;
+                  line-height: 30px; }
+                #head .container .head_t .head_t_c .serach_top .serchContent .searchLeft label .serach_top_subBtn {
+                  border: none;
+                  font-family: "微软雅黑", "宋体", "verdana";
+                  padding: 0 28px;
+                  width: 83px;
+                  height: 30px;
+                  line-height: 30px;
+                  text-align: right;
+                  font-size: 14px;
+                  color: #fff;
+                  background-color: #d51819;
+                  display: inline-block;
+                  cursor: pointer; }
+          #head .container .head_t .head_t_c .serach_top .hotkey {
+            float: right;
+            margin-top: -20px;
+            width: 350px;
+            font-size: 12px;
+            line-height: 12px; }
+            #head .container .head_t .head_t_c .serach_top .hotkey li {
+              float: left;
+              margin-left: 8px; }
+              #head .container .head_t .head_t_c .serach_top .hotkey li a {
+                text-decoration: none;
+                color: #000; }
+            #head .container .head_t .head_t_c .serach_top .hotkey li::after {
+              content: '';
+              line-height: 12px;
+              border-right: 1px solid #E2DCE2;
+              margin-left: 8px; }
+            #head .container .head_t .head_t_c .serach_top .hotkey li:last-child::after {
+              border-right: none; }
+            #head .container .head_t .head_t_c .serach_top .hotkey li:nth-child(2n-1) a {
+              color: #D30A06; }
+      #head .container .head_t .shopping_bag {
+        float: right;
+        height: 55px;
+        width: 150px;
+        line-height: 18px;
+        margin-top: 27px; }
+        #head .container .head_t .shopping_bag a {
+          font-size: 14px; }
+          #head .container .head_t .shopping_bag a b {
+            color: #d93938;
+            font-weight: 400; }
+    #head .container .head_b {
+      margin-top: 8px;
+      overflow: hidden; }
+      #head .container .head_b ul {
+        font-size: 14px;
+        line-height: 30px;
+        position: relative;
+        overflow: hidden; }
+        #head .container .head_b ul .shopping_classify {
+          position: relative;
+          width: 224px;
+          height: 40px;
+          line-height: 40px;
+          background-color: #d51819;
+          cursor: pointer;
+          z-index: 899;
+          margin-top: -6px;
+          padding: 0 12px;
+          color: #fff; }
+          #head .container .head_b ul .shopping_classify .iconfont {
+            width: 18px;
+            height: 18px;
+            padding-right: 14px;
+            display: inline-block;
+            color: #fff;
+            font-weight: 600;
+            font-size: 26px; }
+        #head .container .head_b ul li {
+          float: left;
+          padding: 0 15px; }
+          #head .container .head_b ul li a {
+            color: #000; }
+        #head .container .head_b ul .head_b_pic {
+          position: absolute;
+          bottom: 7px;
+          right: 0;
+          float: right !important;
+          width: 134px;
+          height: 40px; }
+          #head .container .head_b ul .head_b_pic a img {
+            width: 100%;
+            height: 100%;
+            display: block; }
+
+/*---------导航栏&轮播图---------------*/
+#home_banner {
+  position: relative;
+  overflow: hidden; }
+  #home_banner .container {
+    border-bottom: 1px solid #DCDCDC;
+    overflow: hidden;
+    position: relative;
+    padding: 0;
+    /*侧边导航*/
+    /*轮播图*/ }
+    #home_banner .container .home_banner_l {
+      float: left;
+      overflow: hidden; }
+      #home_banner .container .home_banner_l .home_banner_l_box {
+        border: 1px solid #d51819;
+        padding-left: 10px;
+        float: left;
+        position: relative;
+        z-index: 99;
+        line-height: 18px;
+        overflow: hidden; }
+        #home_banner .container .home_banner_l .home_banner_l_box .home_banner_l_box_nav {
+          height: 520px;
+          width: 100%; }
+          #home_banner .container .home_banner_l .home_banner_l_box .home_banner_l_box_nav li {
+            width: 214px;
+            text-overflow: ellipsis; }
+            #home_banner .container .home_banner_l .home_banner_l_box .home_banner_l_box_nav li dl {
+              position: relative;
+              overflow: hidden;
+              width: 100%; }
+              #home_banner .container .home_banner_l .home_banner_l_box .home_banner_l_box_nav li dl dt {
+                position: relative;
+                width: 214px;
+                height: 19px;
+                margin-top: 10px;
+                overflow: hidden; }
+                #home_banner .container .home_banner_l .home_banner_l_box .home_banner_l_box_nav li dl dt a {
+                  display: inline-block;
+                  font: bold 14px "Microsoft YaHei" !important;
+                  padding-right: 10px;
+                  overflow: hidden;
+                  color: #222;
+                  text-decoration: none; }
+                #home_banner .container .home_banner_l .home_banner_l_box .home_banner_l_box_nav li dl dt i {
+                  position: absolute;
+                  right: 10px;
+                  top: 2px;
+                  width: 9px;
+                  height: 14px;
+                  font-size: 12px;
+                  color: #d51819;
+                  font-weight: bold;
+                  background: none; }
+              #home_banner .container .home_banner_l .home_banner_l_box .home_banner_l_box_nav li dl dd {
+                height: 44px;
+                width: 214px; }
+                #home_banner .container .home_banner_l .home_banner_l_box .home_banner_l_box_nav li dl dd .getActId {
+                  width: 100%;
+                  float: none; }
+                  #home_banner .container .home_banner_l .home_banner_l_box .home_banner_l_box_nav li dl dd .getActId div {
+                    padding: 3px 10px; }
+                    #home_banner .container .home_banner_l .home_banner_l_box .home_banner_l_box_nav li dl dd .getActId div a {
+                      color: #696969;
+                      display: inline-block;
+                      font: 14px "Microsoft YaHei";
+                      padding-right: 3px;
+                      overflow: hidden;
+                      text-decoration: none; }
+            #home_banner .container .home_banner_l .home_banner_l_box .home_banner_l_box_nav li .hover_nav {
+              display: none; }
+              #home_banner .container .home_banner_l .home_banner_l_box .home_banner_l_box_nav li .hover_nav .hover_nav_con {
+                width: 722px;
+                height: 530px;
+                border: 1px solid #999;
+                border-top: 0;
+                position: absolute;
+                top: 0; }
+        #home_banner .container .home_banner_l .home_banner_l_box li:hover .hover_nav {
+          display: block; }
+    #home_banner .container .carousel {
+      background-color: red;
+      width: 683px;
+      height: 475px;
+      margin: 5px;
+      border-bottom: 0;
+      float: left; }
+      #home_banner .container .carousel img {
+        width: 100%;
+        height: 100%; }
+    #home_banner .container .home_r {
+      float: left;
+      position: absolute;
+      top: 0;
+      right: 0; }
+      #home_banner .container .home_r ul .home_r_t {
+        width: 236px;
+        height: 354px;
+        margin-bottom: 5px; }
+
+/*-------小转盘-------------*/
+#tinyBanner {
+  height: 132px;
+  margin: 5px auto;
+  overflow: hidden; }
+  #tinyBanner .container {
+    overflow: hidden;
+    padding: 0; }
+    #tinyBanner .container ul {
+      position: absolute; }
+      #tinyBanner .container ul li {
+        float: left;
+        width: 236px;
+        margin-right: 5px; }
+        #tinyBanner .container ul li a img {
+          width: 100%;
+          height: 100%; }
+
+/*----------楼层----------*/
+.classify_floor {
+  overflow: hidden; }
+  .classify_floor .container {
+    height: 100%;
+    overflow: hidden;
+    padding: 0; }
+    .classify_floor .container .all_floor {
+      overflow: hidden; }
+      .classify_floor .container .all_floor h3 {
+        width: 1200px;
+        color: #000;
+        font-size: 14px;
+        line-height: 30px;
+        position: relative;
+        top: 10px; }
+      .classify_floor .container .all_floor .floor_l {
+        float: left;
+        display: block;
+        overflow: hidden; }
+        .classify_floor .container .all_floor .floor_l .floor_l_t {
+          width: 240px;
+          height: 185px; }
+        .classify_floor .container .all_floor .floor_l .floor_l_m {
+          width: 240px;
+          height: 115px; }
+          .classify_floor .container .all_floor .floor_l .floor_l_m ul {
+            overflow: hidden; }
+            .classify_floor .container .all_floor .floor_l .floor_l_m ul li {
+              float: left;
+              width: 90px;
+              margin: 10px 12px; }
+              .classify_floor .container .all_floor .floor_l .floor_l_m ul li a {
+                width: 90px;
+                height: 28px;
+                display: block;
+                line-height: 28px;
+                font-size: 14px; }
+        .classify_floor .container .all_floor .floor_l .floor_l_b {
+          width: 240px; }
+          .classify_floor .container .all_floor .floor_l .floor_l_b ul {
+            overflow: hidden; }
+            .classify_floor .container .all_floor .floor_l .floor_l_b ul li {
+              float: left; }
+              .classify_floor .container .all_floor .floor_l .floor_l_b ul li a {
+                width: 120px;
+                height: 60px;
+                display: block;
+                font-size: 14px; }
+                .classify_floor .container .all_floor .floor_l .floor_l_b ul li a img {
+                  width: 100%;
+                  height: 100%; }
+      .classify_floor .container .all_floor .floor_s {
+        width: 240px;
+        height: 480px;
+        float: left; }
+        .classify_floor .container .all_floor .floor_s a {
+          width: 240px;
+          height: 480px;
+          display: block; }
+          .classify_floor .container .all_floor .floor_s a img {
+            width: 100%;
+            height: 100%; }
+      .classify_floor .container .all_floor .floor_c {
+        width: 480px;
+        height: 480px;
+        float: left;
+        overflow: hidden; }
+        .classify_floor .container .all_floor .floor_c .floor_c_t a {
+          width: 480px;
+          height: 240px;
+          display: block; }
+          .classify_floor .container .all_floor .floor_c .floor_c_t a img {
+            width: 100%;
+            height: 100%; }
+        .classify_floor .container .all_floor .floor_c .floor_c_b {
+          float: left;
+          overflow: hidden; }
+          .classify_floor .container .all_floor .floor_c .floor_c_b a {
+            width: 240px;
+            height: 240px;
+            display: block;
+            float: left; }
+            .classify_floor .container .all_floor .floor_c .floor_c_b a img {
+              width: 100%;
+              height: 100%; }
+      .classify_floor .container .all_floor .floor_r {
+        overflow: hidden;
+        float: left; }
+        .classify_floor .container .all_floor .floor_r a {
+          width: 200px;
+          height: 240px;
+          display: block; }
+          .classify_floor .container .all_floor .floor_r a img {
+            width: 100%;
+            height: 100%; }
+
+/*---------分享区-----------*/
+.shares {
+  margin-top: 50px; }
+  .shares .container {
+    overflow: hidden; }
+    .shares .container .share_l {
+      float: left; }
+      .shares .container .share_l li {
+        border: 1px solid #dcdcdc;
+        float: left;
+        margin-right: -1px; }
+        .shares .container .share_l li a {
+          color: #000;
+          text-decoration: none; }
+          .shares .container .share_l li a img {
+            display: block;
+            width: 258px;
+            height: 238px; }
+    .shares .container .share_r {
+      float: right;
+      height: 240px;
+      border: 1px solid #dcdcdc; }
+      .shares .container .share_r .share_r_t a img {
+        width: 359px;
+        height: 149px; }

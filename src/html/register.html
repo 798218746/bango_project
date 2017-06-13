@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>用户注册</title>
+		<link rel="stylesheet" type="text/css" href="../css/base.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/register.css"/>
+		
+		<script src="../js/require.js" data-main = "../js/register"></script>
+	</head>
+	<body>
+		<div class="registerPage">
+			<div class="container">
+				<div class="logo">
+					<h1><a href="http://localhost/banggou/src/index.html"><img src="../img/logo.jpg"/></a></h1>
+				</div>
+				<div class="main_register">
+					<div class="pagename"><img src="../img/register1.png"/></div>
+					
+					<!--注册页面-->
+					<div class="reg_box">
+						<div class="reg_box_l">
+							<form action="" method="post">
+								<div class="descript">第一步：填写手机账户信息（以下内容均为必填）</div>
+								<div class="item">
+									<div class="ltext">用户名：</div>
+									<input type="text" id="username" class="textCon username" name="username" value="" />
+									<span class="tips">4-20个字符，一个汉字为两个字符，推荐使用中文会会员名字。一旦注册成功会员名将不能修改。</span>
+									<!--提示信息-->
+									<div class="verify_text">
+										<span class="tips"></span>
+										<span class="error_info"></span>
+									</div>
+								</div>
+								<div class="item">
+									<div class="ltext">手机号码：</div>
+									<input type="tel" id="telephone" class="textCon telephone" name="telephone" value="" />
+									<span class="tips">请输入您的手机号码。</span>
+									<!--提示信息-->
+									<div class="verify_text">
+										<span class="tips"></span>
+										<span class="error_info"></span>
+									</div>
+								</div>
+								<!--<div class="code">
+									<div class="ltext">验证码：</div>
+									<input type="text" name="codeCon" id="codeCon" class="codeCon" />
+									<img src=""/>
+									
+									<div class="verify_text">
+										<span class="tips"></span>
+										<span class="error_info"></span>
+									</div>
+								</div>-->
+								
+								<div class="item">
+									<div class="ltext">登录密码：</div>
+									<input type="password" name="pwd" id='password' class="textCon password"/>
+									<!--提示信息-->
+									<div class="verify_text">
+										<span class="tips"></span>
+										<span class="error_info"></span>
+									</div>
+								</div>
+								
+								<div class="regSub">
+									<div class="ltext">&nbsp;</div>
+									<div class="reg_sub"><a href=""><img src="../img/register_btn.png"/></a></div>
+									
+								</div>
+							</form>
+						</div>
+						<div class="reg_box_r"><img src="../img/reg_descript.png" alt="" /></div>
+					</div>
+				
+				
+				</div>
+			</div>
+		</div>
+		
+		
+	</body>
+</html>

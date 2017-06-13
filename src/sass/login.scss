@@ -1,0 +1,78 @@
+.headLogo{
+    .container{
+        
+        .logo{
+            width: 220px;height: 100px;
+        }
+        
+        .main{margin-top: 25px;display: block;
+            .main_left{width: 640px;height: 430px;float: left;}
+            
+            /*右边登录界面*/
+            .login_tab{
+                width: 340px;float: left;
+                .login_title{
+                    height: 40px;
+                    span{margin: 0;padding: 3px;
+                      display: inline-block;width: 108px;color: #666;cursor: pointer;line-height: 34px;text-align: center;border: 1px solid #ccc;background-color: #fff;
+                    }
+                    span.active{padding-top: 3px;border-top: 2px solid #c00;border-bottom: none;}
+                }
+                
+                
+                .login_content{
+                    width: 331px;height: 278px;border: 1px solid #ccc;border-top: none;padding-top: 1px;margin-top: -1px;
+                    .loginMsg{
+                        height: 278px;overflow: hidden;
+                        .item{
+                            margin-top: 30px;overflow: hidden;
+                            .ltext{
+                                float: left; width: 80px;color: #666;line-height: 28px;font-size: 14px;text-align: right;
+                            }
+                            input{float:left; border: 1px solid #ccc;width: 220px;height: 26px;line-height: 26px;padding: 0 5px;margin: 0 10px 0 0;display: block;}
+                            .verify_text{padding-left: 80px;height: 20px;line-height: 20px;}
+                           
+                        }
+                        #yzm{width: 50px;height: 26px;line-height: 26px;margin-right: 10px;}
+                        /*复选框*/
+                        .checks{
+                            margin-top: 5px;overflow: hidden;
+                            .ltext_checks{
+                                display: block;color: #666;float: left;width: 80px; line-height: 28px; font-size: 14px;text-align: right;
+                            }
+                            .selectCheck{
+                                float:left; height: 26px;line-height: 26px;padding: 0 5px;margin: 12px 10px 0 0;
+                            }
+                            .remb_label{margin-right:20px ;}
+                            .verify_text{padding-left: 80px;height: 20px;line-height: 20px;}
+                         }
+                         /*登录按钮*/
+                         .loginBtn{
+                            margin-top: 5px;overflow: hidden;
+                            .loginBtn_empty{
+                                display: block;color: #666;float: left;width: 80px; line-height: 28px; font-size: 14px;text-align: right;
+                            }
+                            .login_btn{
+                                float:left; height: 34px;line-height: 34px;padding: 0 5px;margin-right: 10px;
+                                a{width: 106px;height: 34px;line-height: 34px;display: inline-block;
+                                    img{height: 100%;width: 100%;}
+                                }
+                            }
+                            a{line-height: 34px;}
+                            :hover{color: #FF0000;}
+                            .verify_text{padding-left: 80px;height: 20px;line-height: 20px;}
+                         }
+                    }
+                }
+            }
+            
+            
+        }
+        
+  
+    }
+}
+
+
+
+     

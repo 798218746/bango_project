@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>用户登录</title>
+		<link rel="stylesheet" type="text/css" href="../css/base.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/login.css"/>
+		
+		<script src="../js/require.js" data-main = "../js/login"></script>
+	</head>
+	<body>
+		<div class="headLogo">
+			<div class="container">
+				<div class="logo">
+					<h1><a href="http://localhost/banggou/src/index.html"><img src="../img/logo.jpg"/></a></h1>
+				</div>
+				<div class="main">
+					<div class="main_left">
+						<a href="http://localhost/banggou/src/index.html"><img src="../img/login_banner.jpg"/></a>
+					</div>
+					<div class="login_tab">
+						<div class="login_title">
+							<span>账户登录</span>
+							<span>手机登录</span>
+							<span>卡登录</span>
+						</div>
+						<div class="login_content">
+							<!--用户登录-->
+							<form action="#" class="loginMsg">
+								<div class="item">
+									<div class="ltext">用户名：</div>
+									<input type="text" id="username" class="username" name="username" value="" />
+									<!--提示信息-->
+									<div class="verify_text">
+										<span class="tips"></span>
+										<span class="error_info"></span>
+									</div>
+								</div>
+								<div class="item">
+									<div class="ltext">登录密码：</div>
+									<input type="password" name="pwd" id='password'/>
+									<!--提示信息-->
+									<div class="verify_text">
+										<span class="tips"></span>
+										<span class="error_info"></span>
+									</div>
+								</div>
+								
+								<div class="item yanzhengma">
+									<div class="ltext">验证码：</div>
+									<input type="text" name="yzm" id="yzm" class="yzm" />
+									<img src=""/>
+									<!--提示信息-->
+									<div class="verify_text">
+										<span class="tips"></span>
+										<span class="error_info"></span>
+									</div>
+								</div>
+								
+								<div class="checks">
+									<div class="ltext_checks">&nbsp;</div>
+									<div class="selectCheck">
+										<input type="checkbox" name="rembUser" id="checkbox rembUser" class="rembUser" checked /><label for="rembUser" class="remb_label">记住用户名</label>
+										<input type="checkbox" name="autoLogin" id="checkbox  autoLogin" class="autoLogin" /><label for="autoLogin">自动登录</label>
+									
+									</div>
+									<!--提示信息-->
+									<div class="verify_text">
+										<span class="tips"></span>
+										<span class="error_info"></span>
+									</div>
+								</div>
+								
+								<!--loginbtn-->
+								<div id="loginBtn" class="loginBtn">
+									<div class="loginBtn_empty">&nbsp;</div>
+									<div class="login_btn">
+										<a href=""><img src="../img/login_btn.png"/></a>
+									</div>
+									<a href="" class="findPwd">找回密码？</a>
+									<!--提示信息-->
+									<div class="verify_text">
+										<span class="tips"></span>
+										<span class="error_info"></span>
+									</div>
+								</div>
+							</form>
+							<!--手机登录-->
+							<form action="#" class="loginMsg">
+								<div class="item">
+									<div class="ltext">手机号：</div>
+									<input type="text" id="username" class="username" name="username" value="" />
+									<!--提示信息-->
+									<div class="verify_text">
+										<span class="tips"></span>
+										<span class="error_info"></span>
+									</div>
+								</div>
+								<div class="item">
+									<div class="ltext">登录密码：</div>
+									<input type="password" name="pwd" id='password'/>
+									<!--提示信息-->
+									<div class="verify_text">
+										<span class="tips"></span>
+										<span class="error_info"></span>
+									</div>
+								</div>
+								<div class="item yanzhengma">
+									<div class="ltext">验证码：</div>
+									<input type="text" name="yzm" id="yzm" class="yzm" />
+									<img src=""/>
+									<!--提示信息-->
+									<div class="verify_text">
+										<span class="tips"></span>
+										<span class="error_info"></span>
+									</div>
+								</div>
+								<div class="checks">
+									<div class="ltext_checks">&nbsp;</div>
+									<div class="selectCheck">
+										<input type="checkbox" name="rembUser" id="checkbox rembUser" class="rembUser" checked /><label for="rembUser" class="remb_label">记住用户名</label>
+										<input type="checkbox" name="autoLogin" id="checkbox  autoLogin" class="autoLogin" /><label for="autoLogin">自动登录</label>
+									</div>
+									<!--提示信息-->
+									<div class="verify_text">
+										<span class="tips"></span>
+										<span class="error_info"></span>
+									</div>
+								</div>
+								<!--loginbtn-->
+								<div class="loginBtn">
+									<div class="loginBtn_empty">&nbsp;</div>
+									<div class="login_btn">
+										<a href=""><img src="../img/login_btn.png"/></a>
+									</div>
+									<a href="" class="findPwd">找回密码？</a>
+									<!--提示信息-->
+									<div class="verify_text">
+										<span class="tips"></span>
+										<span class="error_info"></span>
+									</div>
+								</div>
+							</form>
+							<!--卡登录-->
+							<form action="#" class="loginMsg">
+								<div class="item">
+									<div class="ltext">卡号：</div>
+									<input type="text" id="username" class="username" name="username" value="" />
+									<!--提示信息-->
+									<div class="verify_text">
+										<span class="tips"></span>
+										<span class="error_info"></span>
+									</div>
+								</div>
+								<div class="item">
+									<div class="ltext">卡密码：</div>
+									<input type="password" name="pwd" id='password'/>
+									<!--提示信息-->
+									<div class="verify_text">
+										<span class="tips"></span>
+										<span class="error_info"></span>
+									</div>
+								</div>
+								<div class="item yanzhengma">
+									<div class="ltext">验证码：</div>
+									<input type="text" name="yzm" id="yzm" class="yzm" />
+									<img src=""/>
+									<!--提示信息-->
+									<div class="verify_text">
+										<span class="tips"></span>
+										<span class="error_info"></span>
+									</div>
+								</div>
+								<div class="checks">
+									<div class="ltext_checks">&nbsp;</div>
+									<div class="selectCheck">
+										<input type="checkbox" name="rembUser" id="checkbox rembUser" class="rembUser" checked /><label for="rembUser" class="remb_label">记住用户名</label>
+										<input type="checkbox" name="autoLogin" id="checkbox  autoLogin" class="autoLogin" /><label for="autoLogin">自动登录</label>
+									</div>
+									<!--提示信息-->
+									<div class="verify_text">
+										<span class="tips"></span>
+										<span class="error_info"></span>
+									</div>
+								</div>
+								<!--loginbtn-->
+								<div class="loginBtn">
+									<div class="loginBtn_empty">&nbsp;</div>
+									<div class="login_btn">
+										<a href=""><img src="../img/login_btn.png"/></a>
+									</div>
+									<a href="" class="findPwd">找回密码？</a>
+									<!--提示信息-->
+									<div class="verify_text">
+										<span class="tips"></span>
+										<span class="error_info"></span>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+				
+				
+			</div>
+			
+		</div>
+	</body>
+</html>
