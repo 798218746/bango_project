@@ -2,21 +2,25 @@ require(['config'],function(){
 	require(['jquery'],function($){
 		//传递信息到后台
 		$('#loginBtn').on('click',function(){
+			
 			$.ajax({
-				url:'../api/reg.php',
+				url:'../api/login.php',
 				data:{
-					username:$('#username').val(),
-					password:$('#password').val()
+					$imgurl:$('#username').val(),
+					
 				},
 				success:function(res){
 					console.log(res);
-					if(res === 'ok'){
-						alert('登录成功')
+					if(res==1){
+						alert( '登录成功');
+					}
+					if(res==0){
+						alert('用户不存在' );
 					}
 				},
-				error:function(){
-					alert('用户名或密码错误');
-				}
+//				error:function(){
+//					alert('用户名或密码错误');
+//				}
 			});
 			
 		});
@@ -26,7 +30,7 @@ require(['config'],function(){
 		let login_title = login_tab.querySelector('.login_title').children;
 		let login_content = login_tab.querySelector('.login_content').children;
 		
-		console.log(username);
+//		console.log(username);
 		var index = 0;
 
 		// 高亮显示第一个login_tab

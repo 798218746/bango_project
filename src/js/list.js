@@ -4,7 +4,7 @@ require(['config'],function(){
 		let $goodslist = $('.goodslist');
 		let pageNo = 1;
 		let qty = 40;
-
+		let id = 1;
 		// 请求数据
 		$.ajax({
 			
@@ -12,7 +12,8 @@ require(['config'],function(){
 			dataType:'json',
 			data:{
 				page:pageNo,
-				qty:qty
+				qty:qty,
+				guid:id
 			},
 			success:function(res){
 				console.log(res);
@@ -43,22 +44,27 @@ require(['config'],function(){
 					qty:qty
 				},
 				success:function(res){
-					console.log(res);
+					
 					showList(res);
+					
+					
+					
 				}
+				
 			});
 
 			return false;
 		});
-
+		//页面跳转
+		
 
 		function showList(res){
 			console.log(res);
 			let html = res.data.map(item=>{
 				return `
-					<div class="col-sm-4 col-md-2">
+					<div class="col-sm-4 col-md-2 jump">
 						<div class="thumbnail">
-							<a href=""><img src="../${item.imgurl.replace('goods','')}" alt="..."></a>
+							<a href="javascript:;"><img  data-guid="${item.id}" src="../${item.imgurl.replace('goods','')}" alt="..."></a>
 							<div class="caption">
 								<p class="pinpai">${item.pinpai}</p>
 								<a href="#" class="goodsname">${item.goodsname}</a>
@@ -76,6 +82,14 @@ require(['config'],function(){
 				`
 			}).join('');
 			$goodslist.html(html);
+			
+		console.log($('.jump'))
+					$('.goodslist').on('click','img',function(){
+						var id = $(this).attr('data-guid');
+						console.log(id);
+						window.location.href = '../html/details.html?id=' + id;
+					})
+			
 		}
 	});
 });
