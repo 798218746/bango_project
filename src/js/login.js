@@ -1,21 +1,22 @@
 require(['config'],function(){
 	require(['jquery'],function($){
 		//传递信息到后台
-		$('#loginBtn').on('click',function(){
-			
+		$('.login_btn').on('click','img',function(){
+			console.log(8888)
 			$.ajax({
 				url:'../api/login.php',
 				data:{
-					$imgurl:$('#username').val(),
-					
+					username:$('#username').val(),
+					password:$('#username').val()
 				},
 				success:function(res){
 					console.log(res);
 					if(res==1){
 						alert( '登录成功');
+						location.href = '../index.html';
 					}
 					if(res==0){
-						alert('用户不存在' );
+						alert('用户不存在,请重新输入正确的用户名' );
 					}
 				},
 //				error:function(){

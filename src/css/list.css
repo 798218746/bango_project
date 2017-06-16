@@ -191,12 +191,12 @@
   /*----左侧-----*/
   /*----右侧-----*/ }
   .goods_all .container .goods_all_l {
-    width: 180px;
+    width: 150px;
     float: left;
     display: block;
-    margin: 10px 40px 0 0; }
+    margin: 10px 0 0; }
     .goods_all .container .goods_all_l .goods_all_l_box {
-      width: 180px;
+      width: 150px;
       height: 140px; }
       .goods_all .container .goods_all_l .goods_all_l_box h1 {
         font-size: 16px;
@@ -204,7 +204,7 @@
         border-bottom: 1px #000 solid;
         padding-bottom: 10px; }
       .goods_all .container .goods_all_l .goods_all_l_box ul li {
-        width: 180px;
+        width: 150px;
         height: 18px;
         margin-top: 7px; }
         .goods_all .container .goods_all_l .goods_all_l_box ul li a {

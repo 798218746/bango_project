@@ -2,6 +2,7 @@
 require(['config'],function(){
 	//此处代码是在config文件加载完才执行的
 	require(['jquery','lxCarousel'],function(){
+		//引用轮播图
 		let $carousel = $('.carousel');
 		$('.carousel').lxCarousel({
 				imgs:['img/carousel_1.jpg','img/carousel_2.jpg',
@@ -10,6 +11,6 @@ require(['config'],function(){
 				index:3,
 				width:720,
 				height:455
-			}).css('background-color','#f00');
-	})
-})
+			}).css('background-color','#fff');
+	});
+});

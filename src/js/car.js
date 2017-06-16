@@ -50,8 +50,8 @@ require(['config'],function(){
 					</li>
 					<!-- 颜色尺码 -->
 					<li class="mbshop_cart_1127_single_03">
-						<p>颜色：${item.color}</p>
-						<p>尺码：(${item.size})</p>
+						<p>颜色：</p>
+						<p>尺码：()</p>
 					</li>
 					<!-- 单价 -->
 					<li class="mbshop_cart_1127_single_04">
@@ -94,7 +94,7 @@ require(['config'],function(){
 		var subPrice = 0;
 		var subQty = 0;
 		goodslist.map(function(item){
-			subPrice += item.price*item.qty;
+			subPrice += (item.price*item.qty);
 			subQty += item.qty;
 			 
 		});
@@ -107,12 +107,51 @@ require(['config'],function(){
 				<p id="deleteCheckbox" class="go_to_balance_left_del">删除选中商品</p>
 				<p id="cleanError" class="go_to_balance_left_clean">清除失效商品</p>
 				<p class="go_to_balance_left_total">合计(不含运费)：<i class="heji">￥${subPrice.toFixed(2)}</i></p>
-				<p class="go_to_balance_left_alg">商品总价<i class="totalP">￥${subPrice.toFixed(2)}</i> - 优惠<em class="youhuiPrice">￥${(subPrice*0.8).toFixed(2)}</em></p>
+				<p class="go_to_balance_left_alg">商品总价<i class="totalP">￥${subPrice.toFixed(2)}</i> - 优惠<em class="youhuiPrice">￥${subPrice.toFixed(2)}</em></p>
 				<p class="go_to_balance_left_have">已选商品<em class="selectedNum">${subQty}</em>件</p>
 		`);
 		
 //		console.log(subPrice,subQty);
+		getCookie('goodslist');
+//		setCookie('goodslist',JSON.stringify(goodslist));
 		
+		
+		//结算
+		function jiesuan(){
+		var totalPrice = 0;
+		var totalNum = 0;
+		var heji = 0;
+		var youhuiPrice=0;
+//		console.log(type(youhuiPrice));
+		var $selectedNum = $('.selectedNum');
+		var $heji = $('.heji');
+		var $totalP = $('.totalP');
+		var $youhuiPrice = $('.youhuiPrice');
+//		console.log($youhiuPrice);
+		//计算已购数量selectedNum
+		for(var k = 0;k<goodslist.length;k++){
+			totalPrice+=goodslist[k].qty*goodslist[k].price*1;
+			console.log(goodslist[k].price,goodslist[k].qty)
+			totalNum+=goodslist[k].qty;
+			var $sumGoods = goodslist.qty;
+//				console.log($selectedNum)
+			youhuiPrice = (totalPrice*0.2).toFixed(2);
+			heji = (totalPrice - youhuiPrice).toFixed(2);
+			/*totalPrice = (totalPrice*1).toFixed(2);*/
+		
+		}
+		console.log(youhuiPrice)
+		$selectedNum.html(totalNum);
+		$totalP.html(totalPrice.toFixed(2));
+		$heji.html(heji);
+		$youhuiPrice.html(youhuiPrice);
+	
+	
+		}
+		jiesuan()
+	
+	
+	
 		/*点击减少商品数量*/
 		var $jian = $('.mbshop_cart_1127_single_label_left');
 		var $qtyNum = $('.mbshop_cart_1127_single_goods_num');
@@ -120,13 +159,11 @@ require(['config'],function(){
 		var $selectedNum = $('.selectedNum');
 		console.log($xiaoji,$selectedNum);
 		$jian.click(function(){
-			var totalPrice = 0;
-			var totalNum = 0;
-			var heji = 0;
-			var youhuiPrice=0;
+			
+//			console.log(type(youhuiPrice) );
 			var curClass = this.parentNode.parentNode.id;
 			var txtNum = $(this).next();
-			console.log(txtNum);
+//			console.log(txtNum);
 			for(var i=0;i<goodslist.length;i++){
 				if(curClass==goodslist[i].guid){
 					console.log(goodslist[i].guid);
@@ -150,6 +187,7 @@ require(['config'],function(){
 					
 					
 				}
+				jiesuan();
 				
 			}
 
@@ -175,27 +213,7 @@ require(['config'],function(){
 						
 					}
 			}
-			//结算
-			var $selectedNum = $('.selectedNum');
-			var $heji = $('.heji');
-			var $totalP = $('.totalP');
-			var $youhiuPrice = $('.youhuiPrice');
-			console.log($selectedNum);
-			//计算已购数量selectedNum
-			for(var k = 0;k<goodslist.length;k++){
-				totalPrice+=goodslist[k].qty*goodslist[k].price;
-				totalNum+=goodslist[k].qty;
-				var $sumGoods = goodslist.qty;
-//				console.log($selectedNum)
-				youhiuPrice = totalPrice*0
-				heji = totalPrice - youhiuPrice;
-				
-			}
-			console.log(totalNum)
-			$selectedNum.html(totalNum);
-			$totalP.html(totalPrice);
-			$heji.html(heji);
-			$youhiuPrice.html(youhiuPrice);
+			
 		});
 		
 		
@@ -203,7 +221,7 @@ require(['config'],function(){
 		/*----点击添加商品数量-----*/
 		var $jia = $('.mbshop_cart_1127_single_label_right');
 //		var $qtyNum = $('.mbshop_cart_1127_single_goods_num');
-		console.log($jia);
+//		console.log($jia);
 		$jia.click(function(){
 			var totalPrice = 0;
 			var totalNum = 0;
@@ -230,6 +248,7 @@ require(['config'],function(){
 					}
 					
 				}
+				jiesuan()
 				
 			}
 			//小计
@@ -249,29 +268,41 @@ require(['config'],function(){
 					goodslist[i].qty=1;
 				}
 			}
-			
-			//结算
-			var $selectedNum = $('.selectedNum');
-			var $heji = $('.heji');
-			var $totalP = $('.totalP');
-			var $youhiuPrice = $('.youhuiPrice');
-			console.log($selectedNum);
-			//计算已购数量selectedNum
-			for(var k = 0;k<goodslist.length;k++){
-				totalPrice+=goodslist[k].qty*goodslist[k].price;
-				totalNum+=goodslist[k].qty;
-				var $sumGoods = goodslist.qty;
-//				console.log($selectedNum)
-				youhiuPrice = totalPrice*0
-				heji = totalPrice - youhiuPrice;
+
+		});
+		
+		
+		//删除单个商品
+		var $delete_goods = $('.delete_goods');
+		console.log($delete_goods);
+		$delete_goods.click(function(){
+			var curentUl = this.parentNode.parentNode;
+			console.log(curentUl)
+			var id = curentUl.getAttribute('id');
+//			console.log(id);
+			for(var i=0;i<goodslist.length;i++){
+//				console.log(goodslist[i].guid);
+				if(goodslist[i].guid === id){
+					console.log(id,goodslist[i].guid )
+					// 删除数组中对应的商品
+					goodslist.splice(i,1);
+
+					jiesuan();
+					// 重新写入cookie
+					setCookie('goodslist',JSON.stringify(goodslist));
+					break;
+				}
 				
 			}
-			console.log(totalNum)
-			$selectedNum.html(totalNum);
-			$totalP.html(totalPrice);
-			$heji.html(heji);
-			$youhiuPrice.html(youhiuPrice);
+
+
+			// 删除DOM节点
+			// removeChild
+			 curentUl.parentNode.removeChild(curentUl);
+//			render();
+		
 		});
+		
 		
 		
 	});
